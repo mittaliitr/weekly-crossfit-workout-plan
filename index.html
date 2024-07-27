@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly CrossFit Workout Plan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .workout-day {
+            display: none;
+            background-color: #fff;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .workout-day.active {
+            display: block;
+        }
+        .exercise {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+        .exercise img {
+            margin-right: 10px;
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+<h1>Weekly CrossFit Workout Plan</h1>
+<label for="day-select">Select a day:</label>
+<select id="day-select" onchange="showWorkout()">
+    <option value="">--Select--</option>
+    <option value="monday">Monday</option>
+    <option value="tuesday">Tuesday</option>
+    <option value="wednesday">Wednesday</option>
+    <option value="thursday">Thursday</option>
+    <option value="friday">Friday</option>
+    <option value="saturday">Saturday</option>
+    <option value="sunday">Sunday</option>
+</select>
+
+<div id="monday" class="workout-day">
+    <h2>Monday: EMOM (Every Minute on the Minute) - 20 minutes</h2>
+    <p><strong>Warm-up:</strong> 5-10 minutes of light cardio and dynamic stretching</p>
+    <p><strong>Workout:</strong></p>
+    <ul>
+        <li class="exercise"><img src="icons/push-up.svg" alt="Push-ups">Minute 1: 10 Push-ups</li>
+        <li class="exercise"><img src="icons/air-squat.svg" alt="Air Squats">Minute 2: 15 Air Squats</li>
+        <li class="exercise"><img src="icons/dumbbell-row.svg" alt="Dumbbell Rows">Minute 3: 10 Dumbbell Rows (each arm)</li>
+        <li class="exercise"><img src="icons/sit-up.svg" alt="Sit-ups">Minute 4: 15 Sit-ups</li>
+    </ul>
+    <p>Repeat for 5 rounds</p>
+</div>
+<div id="tuesday" class="workout-day">
+    <h2>Tuesday: AMRAP (As Many Rounds As Possible) - 20 minutes</h2>
+    <p><strong>Warm-up:</strong> 5-10 minutes of light cardio and dynamic stretching</p>
+    <p><strong>Workout:</strong></p>
+    <ul>
+        <li class="exercise"><img src="icons/dumbbell-thruster.svg" alt="Dumbbell Thrusters">10 Dumbbell Thrusters</li>
+        <li class="exercise"><img src="icons/kettlebell-swing.svg" alt="Kettlebell Swings">15 Kettlebell Swings</li>
+        <li class="exercise"><img src="icons/box-jump.svg" alt="Box Jumps">20 Box Jumps (or step-ups)</li>
+        <li class="exercise"><img src="icons/run.svg" alt="Run">200-meter Run (or 1 minute of high knees)</li>
+    </ul>
+    <p>Complete as many rounds as possible in 20 minutes</p>
+</div>
+<div id="wednesday" class="workout-day">
+    <h2>Wednesday: Strength & Skill</h2>
+    <p><strong>Warm-up:</strong> 5-10 minutes of light cardio and dynamic stretching</p>
+    <p><strong>Workout:</strong></p>
+    <ul>
+        <li class="exercise"><img src="icons/deadlift.svg" alt="Deadlift">Deadlift: 5 sets of 5 reps</li>
+        <li class="exercise"><img src="icons/pull-up.svg" alt="Pull-ups">Pull-ups: 5 sets of 5 reps (use bands or assisted pull-up machine if needed)</li>
+        <li class="exercise"><img src="icons/plank.svg" alt="Plank Holds">Plank Holds: 3 sets of 1 minute</li>
+    </ul>
+</div>
+<div id="thursday" class="workout-day">
+    <h2>Thursday: Active Recovery/Stretching</h2>
+    <p><strong>Activities:</strong></p>
+    <ul>
+        <li class="exercise"><img src="icons/yoga.svg" alt="Yoga">Light yoga or stretching routine (20-30 minutes)</li>
+        <li class="exercise"><img src="icons/walk.svg" alt="Walk">Leisure walk with your baby (30-45 minutes)</li>
+    </ul>
+</div>
+<div id="friday" class="workout-day">
+    <h2>Friday: For Time</h2>
+    <p><strong>Warm-up:</strong> 5-10 minutes of light cardio and dynamic stretching</p>
+    <p><strong>Workout:</strong> 21-15-9 reps of:</p>
+    <ul>
+        <li class="exercise"><img src="icons/burpee.svg" alt="Burpees">Burpees</li>
+        <li class="exercise"><img src="icons/dumbbell-snatch.svg" alt="Dumbbell Snatches">Dumbbell Snatches (alternating arms)</li>
+        <li class="exercise"><img src="icons/wall-ball.svg" alt="Wall Balls">Wall Balls (or medicine ball throws)</li>
+    </ul>
+    <p>Complete the workout as quickly as possible</p>
+</div>
+<div id="saturday" class="workout-day">
+    <h2>Saturday: Chipper</h2>
+    <p><strong>Warm-up:</strong> 5-10 minutes of light cardio and dynamic stretching</p>
+    <p><strong>Workout:</strong></p>
+    <ul>
+        <li class="exercise"><img src="icons/jump-rope.svg" alt="Jump Rope">50 Jump Rope (or jumping jacks)</li>
+        <li class="exercise"><img src="icons/lunge.svg" alt="Lunges">40 Lunges (alternating legs)</li>
+        <li class="exercise"><img src="icons/push-press.svg" alt="Push Press">30 Push Press (with dumbbells)</li>
+        <li class="exercise"><img src="icons/sit-up.svg" alt="Sit-ups">20 Sit-ups</li>
+        <li class="exercise"><img src="icons/burpee.svg" alt="Burpees">10 Burpees</li>
+    </ul>
+    <p>Complete the sequence in the shortest time possible</p>
+</div>
+<div id="sunday" class="workout-day">
+    <h2>Sunday: Rest or Light Activity</h2>
+    <p><strong>Activities:</strong></p>
+    <ul>
+        <li class="exercise"><img src="icons/walk.svg" alt="Walk">Leisure walk with your baby</li>
+        <li class="exercise"><img src="icons/stretching.svg" alt="Stretching">Gentle stretching or yoga</li>
+    </ul>
+</div>
+
+<script>
+    function showWorkout() {
+        var selectedDay = document.getElementById("day-select").value;
+        var days = document.getElementsByClassName("workout-day");
+        for (var i = 0; i < days.length; i++) {
+            days[i].classList.remove("active");
+            if (days[i].id === selectedDay) {
+                days[i].classList.add("active");
+            }
+        }
+    }
+</script>
+</body>
+</html>
